@@ -1,0 +1,19 @@
+#navegacion{
+    display:flex;
+    justify-content: space-between;   
+    background-color: darkgreen; 
+}
+
+#links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+#links li{
+    margin-right: 20px;
+    color: white;
+    margin-top:35px
+    
+}

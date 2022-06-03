@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block contenidoprincipal %}
+    <h1>Familiares</h1>
+
+    
+    {% for fila in familiares  %}
+        <h3>{{ fila.nombre_completo }}</h3>
+        <ul>
+            <li><img class="profile" src="https://loremflickr.com/200/200" alt="" srcset="" width="100" height="100"></li>
+            <li>{{ fila.descripcion }}</li>
+            <li>{{ fila.profesion }}</li>
+            <li>{{ fila.edad }}</li>
+            <li>{{ fila.fecha_nacimiento }}</li>
+            <li>{{ fila.email }}</li>
+        </ul>
+        <br>
+    {% endfor %}
+
+{% endblock contenidoprincipal %}
